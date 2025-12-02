@@ -1,0 +1,25 @@
+/* style.css */
+
+/* * Styles for the Hero Section Background 
+ * Replace 'restaurant-hero-bg.jpg' with your actual image path 
+ */
+.hero-section {
+    /* Placeholder image. Use a high-quality, large image for best results. */
+    background-image: url('https://media.istockphoto.com/id/545286388/photo/chinese-food-blank-background.jpg?s=612x612&w=0&k=20&c=pqOIy07YKO5PlU5VxjscwTGRrrZ8PluKMUjSOz-II60=');
+    background-attachment: fixed; /* Optional: adds a nice parallax effect */
+}
+
+/* * Optional: Custom image styling for the blog posts 
+ * This ensures the image covers the container nicely
+ */
+.blog-post-image {
+    background-size: cover;
+    background-position: center;
+}
+
+/* * Optional: Simple transition for smoother hover effects 
+ * This applies to elements that change more than just color/opacity 
+ */
+a, button, .transition-colors, .transition-shadow {
+    transition: all 0.2s ease-in-out;
+}
