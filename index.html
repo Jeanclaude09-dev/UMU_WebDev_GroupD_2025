@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" src="global.css" />
+    <link rel="stylesheet" href="global.css" />
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -46,150 +46,274 @@
       }
     </style>
   </head>
-<body class="font-display bg-background-light px-10 dark:bg-background-dark text-text-light dark:text-text-dark">
-  <header
-      class="sticky top-4 z-50 flex items-center justify-between whitespace-nowrap rounded-xl bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border border-solid border-neutral-200 dark:border-white/10 px-6 py-3 shadow-md w-full max-w-7xl sm:px-8 mx-auto"
-    >
-      <div class="flex items-center gap-8">
-        <div
-          class="flex items-center gap-3 text-text-light dark:text-text-dark"
+<body class="font-display bg-background-dark px-10 dark:bg-background-light text-text-light dark:text-text-light">
+    <header
+    class="sticky top-4 z-50 flex items-center justify-between whitespace-nowrap rounded-xl bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border border-solid border-neutral-200 dark:border-white/10 px-6 py-3 shadow-md w-full max-w-7xl sm:px-8 mx-auto"
+  >
+    <div class="flex items-center gap-8">
+      <div
+        class="flex items-center gap-3 text-text-light dark:text-text-dark"
+      >
+        <span class="material-symbols-outlined text-secondary text-2xl"
+          >eco</span
         >
-          <span class="material-symbols-outlined text-secondary text-2xl"
-            >eco</span
-          >
-          <h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">
-            Nourish
-          </h2>
-        </div>
-        <nav class="hidden md:flex items-center gap-6">
-          <a
-            class="text-primary text-sm font-bold leading-normal border-b-2 border-primary pb-1"
-            href="index.html"
-            >Home</a
-          >
-          <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-            href="products.html"
-            >Menu</a
-          >
-          <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-            href="blog.html"
-            >Blog</a
-          >
-          <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-            href="about.html"
-            >About</a
-          >
-          <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-            href="contact.html"
-            >Contact</a
-          >
-        </nav>
+        <h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">
+          Nourish
+        </h2>
       </div>
-      <div class="flex flex-1 justify-end items-center gap-4">
-        <a href="cart.html" class="relative">
-          <span
-            class="material-symbols-outlined text-2xl hover:text-primary transition-colors"
-            >shopping_cart</span
-          >
-          <span
-            id="cart-count"
-            class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
-            >0</span
-          >
-        </a>
+      <nav class="hidden md:flex items-center gap-6">
         <a
-          href="products.html"
-          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity"
+          class="text-primary text-sm font-bold leading-normal border-b-2 border-primary pb-1"
+          href="index.html"
+          >Home</a
         >
-          <span class="truncate">Order Now</span>
-        </a>
-      </div>
-    </header>
-    <main></main>
+        <a
+          class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+          href="products.html"
+          >Menu</a
+        >
+        <a
+          class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+          href="blog.html"
+          >Blog</a
+        >
+        <a
+          class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+          href="about.html"
+          >About</a
+        >
+        <a
+          class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+          href="contact.html"
+          >Contact</a
+        >
+      </nav>
+    </div>
+    <div class="flex flex-1 justify-end items-center gap-4">
+      <a href="cart.html" class="relative">
+        <span
+          class="material-symbols-outlined text-2xl hover:text-primary transition-colors"
+          >shopping_cart</span
+        >
+        <span
+          id="cart-count"
+          class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+          >0</span
+        >
+      </a>
+      <a
+        href="products.html"
+        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity"
+      >
+        <span class="truncate">Order Now</span>
+      </a>
+    </div>
+  </header>
+
+    <main class="max-w-7xl mx-auto">
+        
+        <section class="hero-section mt-8 h-[500px] bg-cover bg-center rounded-xl relative overflow-hidden flex items-center justify-center text-center p-8 shadow-xl">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 max-w-3xl">
+                <p class="text-xl font-medium text-white/90 mb-4 tracking-wider">Food is our common ground, a universal experience</p>
+                <h1 class="text-5xl md:text-7xl font-black text-white leading-tight tracking-tighter">
+                    AT @NOURISH EVERY MEAL TELLS A STORY.
+                </h1>
+                <a
+                    href="products.html"
+                    class="mt-8 inline-flex items-center justify-center rounded-lg h-12 px-6 bg-secondary text-white text-lg font-bold leading-normal tracking-[0.015em] hover:bg-secondary/90 transition-colors shadow-lg"
+                >
+                    <span class="truncate">See Our Menu</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="mt-20 py-10">
+            <h2 class="text-4xl font-extrabold text-center mb-12">Our Humble Story</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class=""mb-4 text-lg text-text-light dark:text-text-dark>
+                        <center>Nourish was born from a simple belief:<br> that eating healthy shouldn't feel like a chore.<br> Tired of bland, mass-produced health food, our founder,<br> Chef Elara, decided to bring the vibrant flavors of farm-to-table<br>cooking to the urban doorstep.<
+                    <p class="bg-background-dark dark:text-text-dark/80">
+                        <center>Every meal is crafted with local, sustainable<br>ingredients, focusing on maximum nutritional value<br>without sacrificing that 'wow' factor. We believe in <br>transparency, community, and the power of a really good meal to turn<br> your whole day around.</center>
+                    </p>
+                    <a
+                        href="about.html"
+                        class="inline-block mt-4 text-primary font-bold hover:underline transition-colors"
+                        >Read the full journey &rarr;</a
+                    >
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-2xl">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-20 py-10">
+            <h2 class="text-4xl font-extrabold text-center mb-12 text-text-light"> Fresh From the Blog</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <article class="bg-background-light dark:bg-[#252525] rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <div class="h-48 w-full overflow-hidden">
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/210211141204-05-classic-italian-dishes.jpg?q=w_5313,h_2988,x_0,y_0,c_fill" alt="">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2 hover:text-primary transition-colors"><a href="blog.html">An italian food basically for a breakfast Dont miss out</a></h3>
+                        <p class="text-sm text-text-light/70 dark:text-text-dark/70 mb-3">5 Minute Breakfasts That Actually Works.</p>
+                        
+                    </div>
+                </article>
+
+                <article class="bg-background-light dark:bg-[#252525] rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <div class="h-48 w-full overflow-hidden">
+                        <img src="https://pbs.twimg.com/media/GIh8QfaWwAAaV23.jpg" alt="">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2 hover:text-primary transition-colors"><a href="blog.html">A mixture of two kinds of foods known locally as katogo</a></h3>
+                        <p class="text-sm text-text-light/70 dark:text-text-dark/70 mb-3">Mastering Meal Prep: The Ultimate Guide.</p>
+                       
+                    </div>
+                </article>
+
+                <article class="bg-background-light dark:bg-[#252525] rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <div class="h-48 w-full overflow-hidden">
+                    <img src="https://images.stockcake.com/public/a/5/c/a5c13f96-9752-4564-a75b-c29a8ee2cf1c_large/steaming-coffee-mug-stockcake.jpg" alt="">
+
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2 hover:text-primary transition-colors"><a href="blog.html">A cup of brewed coffee made, with a variety of different flavours</a></h3>
+                        <p class="text-sm text-text-light/70 dark:text-text-dark/70 mb-3">just come for a single or double shot.</p>
+                        
+                    </div>
+                </article>
+
+                <article class="bg-background-light dark:bg-[#252525] rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <div class="h-48 w-full overflow-hidden">
+                        <img src="https://pbs.twimg.com/media/F5W8eZ_W4AEzpcW.jpg" alt="">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2 hover:text-primary transition-colors"><a href="blog.html">A attractive collection of different food stuffs known as OLUSANIYA</a></h3>
+                        <p class="text-sm text-text-light/70 dark:text-text-dark/70 mb-3">Delicious plant-based meals to kick off the new year.</p>
+                        
+                    </div>
+                </article>
+                
+            </div>
+            <div class="text-center mt-10">
+                <a
+                    href="blog.html"
+                    class="inline-block mt-4 text-secondary font-bold hover:underline transition-colors"
+                    >View All Blog Posts &rarr;</a
+                >
+            </div>
+        </section>
+
+        <section class="mt-20 py-10 bg-neutral-100 dark:bg-[#252525] rounded-xl p-10">
+            <h2 class="text-4xl font-extrabold text-center text-primary mb-12">What Our Customers Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="p-6 bg-white dark:bg-background-dark/90 rounded-lg shadow-xl border-t-4 border-primary">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-4">format_quote</span>
+                    <p class="italic text-text-light/90 dark:text-text-dark/90 mb-4">"I finally found a meal service that makes me look forward to my lunch! The flavors are incredible, and I love knowing the ingredients are top-notch. **Seriously a game-changer**."</p>
+                    <p class="font-bold text-sm">— Sarah L., Wellness Coach</p>
+                </div>
+
+                <div class="p-6 bg-white dark:bg-background-dark/90 rounded-lg shadow-xl border-t-4 border-secondary">
+                    <span class="material-symbols-outlined text-4xl text-secondary mb-4">format_quote</span>
+                    <p class="italic text-text-light/90 dark:text-text-dark/90 mb-4">"The flexibility of the menu and the easy delivery are fantastic. My only complaint is that I eat the entire box of cookies too fast. **10/10 recommend!**"</p>
+                    <p class="font-bold text-sm">— Mark T., Software Engineer</p>
+                </div>
+
+                <div class="p-6 bg-white dark:bg-background-dark/90 rounded-lg shadow-xl border-t-4 border-primary">
+                    <span class="material-symbols-outlined text-4xl text-primary mb-4">format_quote</span>
+                    <p class="italic text-text-light/90 dark:text-text-dark/90 mb-4">"I'm usually skeptical of 'healthy' food, but Nourish is different. The portions are satisfying, and the meals are so thoughtfully put together. **My new favorite local spot**."</p>
+                    <p class="font-bold text-sm">— Emily C., Artist</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer
-              class="mt-16 border-t border-neutral-200 dark:border-white/10 pt-8 pb-8"
-            >
-              <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center gap-3">
-                    <span
-                      class="material-symbols-outlined text-secondary text-2xl"
-                      >eco</span
-                    >
-                    <h2 class="text-xl font-bold">Nourish</h2>
-                  </div>
-                  <p class="text-text-light/70 dark:text-text-dark/70">
-                    Fresh, healthy, and delicious meals delivered right to your
-                    doorstep.
-                  </p>
-                </div>
-                <div class="flex flex-col gap-3">
-                  <h4
-                    class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
-                  >
-                    Company
-                  </h4>
-                  <a
-                    class="hover:text-primary transition-colors"
-                    href="about.html"
-                    >About Us</a
-                  >
-                  <a class="hover:text-primary transition-colors" href="#"
-                    >Careers</a
-                  >
-                  <a class="hover:text-primary transition-colors" href="#"
-                    >Press</a
-                  >
-                </div>
-                <div class="flex flex-col gap-3">
-                  <h4
-                    class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
-                  >
-                    Support
-                  </h4>
-                  <a
-                    class="hover:text-primary transition-colors"
-                    href="contact.html"
-                    >Contact Us</a
-                  >
-                  <a class="hover:text-primary transition-colors" href="#"
-                    >FAQ</a
-                  >
-                  <a class="hover:text-primary transition-colors" href="#"
-                    >Privacy Policy</a
-                  >
-                  <a class="hover:text-primary transition-colors" href="#"
-                    >Terms of Service</a
-                  >
-                </div>
-                <div class="flex flex-col gap-3">
-                  <h4
-                    class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
-                  >
-                    Follow Us
-                  </h4>
-                  <div class="flex gap-4">
-                    <a class="hover:text-primary transition-colors" href="#"
-                      >Instagram</a
-                    >
-                    <a class="hover:text-primary transition-colors" href="#"
-                      >Facebook</a
-                    >
-                    <a class="hover:text-primary transition-colors" href="#"
-                      >Twitter</a
-                    >
-                  </div>
-                </div>
+      class="mt-16 border-t border-neutral-200 dark:border-white/10 pt-8 pb-8 max-w-7xl mx-auto"
+    >
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+            <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <span
+                  class="material-symbols-outlined text-secondary text-2xl"
+                  >eco</span
+                >
+                <h2 class="text-xl font-bold">Nourish</h2>
               </div>
-              <div
-                class="text-center text-xs text-text-light/50 dark:text-text-dark/50 mt-12 pt-6 border-t border-neutral-200 dark:border-white/10"
+              <p class="text-text-light/70 dark:text-text-dark/70">
+                Fresh, healthy, and delicious meals delivered right to your
+                doorstep.
+              </p>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h4
+                class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
               >
-                © 2025 Nourish. All Rights Reserved.
+                Company
+              </h4>
+              <a
+                class="hover:text-primary transition-colors"
+                href="about.html"
+                >About Us</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Careers</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Press</a
+              >
+            </div>
+            <div class="flex flex-col gap-3">
+              <h4
+                class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
+              >
+                Support
+              </h4>
+              <a
+                class="hover:text-primary transition-colors"
+                href="contact.html"
+                >Contact Us</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >FAQ</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Privacy Policy</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Terms of Service</a
+              >
+            </div>
+            <div class="flex flex-col gap-3">
+              <h4
+                class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
+              >
+                Follow Us
+              </h4>
+              <div class="flex gap-4">
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Instagram</a
+                >
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Facebook</a
+                >
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Twitter</a
+                >
               </div>
-            </footer>
+            </div>
+          </div>
+          <div
+            class="text-center text-xs text-text-light/50 dark:text-text-dark/50 mt-12 pt-6 border-t border-neutral-200 dark:border-white/10"
+          >
+            © 2025 Nourish. All Rights Reserved.
+          </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
