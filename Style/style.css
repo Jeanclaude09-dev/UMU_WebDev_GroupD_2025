@@ -1,8 +1,19 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 main {
   min-height: 100vh;
   height: auto;
+
+}
+.hero-section {
+    background-image: url('https://media.istockphoto.com/id/545286388/photo/chinese-food-blank-background.jpg?s=612x612&w=0&k=20&c=pqOIy07YKO5PlU5VxjscwTGRrrZ8PluKMUjSOz-II60=');
+    background-attachment: fixed;
+}
+.blog-post-image {
+    background-size: cover;
+    background-position: center;
+}
+a, button, .transition-colors, .transition-shadow {
+    transition: all 0.2s ease-in-out;
 }
