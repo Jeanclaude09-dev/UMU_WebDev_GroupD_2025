@@ -1,53 +1,8 @@
-@import "tailwindcss";
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
+*, *::before, *::after {
   box-sizing: border-box;
-}
-html,
-body {
-  width: 100%;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 36px;
-}
-h2 {
-  font-size: 24px;
-}
-h3 {
-  font-size: 18px;
 }
 
 main {
-  display: relative;
   min-height: 100vh;
   height: auto;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-section {
-  max-height: 480px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: flex-end;
-}
-.hero-section a {
-  text-decoration: none;
-  color: black;
-  padding: 8px;
-  background-color: rgb(226, 114, 91);
 }
