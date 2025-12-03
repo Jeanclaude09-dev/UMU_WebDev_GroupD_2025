@@ -1,31 +1,48 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
-    const cartCountElement = document.getElementById('cart-count');
-    
-    // 1. Initial Cart Count
-    // In a real application, this value would be fetched from a server or local storage.
-    // We'll start it at a random number for demonstration.
-    let cartCount = localStorage.getItem('nourishCartCount') || 2; 
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    const CART_COUNT_KEY = 'cartCount';
+    const DARK_MODE_KEY = 'darkMode';
 
-    const updateCartCount = (count) => {
-        cartCountElement.textContent = count;
-        localStorage.setItem('nourishCartCount', count);
-    };
-
-    updateCartCount(cartCount);
-
-    // 2. Simple example of an interactive feature: logging a click
-    const orderNowButton = document.querySelector('header a[href="products.html"]');
-    if (orderNowButton) {
-        orderNowButton.addEventListener('click', (e) => {
-            console.log('User clicked "Order Now" - redirecting to menu.');
-            // In a real app, you might track this click with analytics here.
-        });
+    function setDarkMode(isDarkMode) {
+        if (isDarkMode) {
+            body.classList.remove('light-mode');
+            localStorage.setItem(DARK_MODE_KEY, 'dark');
+        } else {
+            body.classList.add('light-mode');
+            localStorage.setItem(DARK_MODE_KEY, 'light');
+        }
     }
 
-    // You could add features like:
-    // - Dark mode toggle logic (if you want an actual toggle button)
-    // - Simple form validation
-    // - Image carousel/slider for testimonials
+    const savedMode = localStorage.getItem(DARK_MODE_KEY);
+    if (savedMode === 'light') {
+        setDarkMode(false);
+    } else if (savedMode === 'dark') {
+        setDarkMode(true);
+    } else {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setDarkMode(prefersDark);
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+        const isCurrentlyLight = body.classList.contains('light-mode');
+        setDarkMode(isCurrentlyLight); 
+    });
+
+    const cartCountElement = document.getElementById('cart-count');
+    
+    function updateCartCountDisplay() {
+        const count = localStorage.getItem(CART_COUNT_KEY) || 0;
+        cartCountElement.textContent = count;
+    }
+
+    updateCartCountDisplay();
+
+    window.addToCart = function() {
+        let count = parseInt(localStorage.getItem(CART_COUNT_KEY) || 0);
+        count += 1;
+        localStorage.setItem(CART_COUNT_KEY, count);
+        updateCartCountDisplay();
+        alert('Item added to cart!');
+    };
 });
