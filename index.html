@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -48,7 +48,7 @@
   </head>
 <body class="font-display bg-background-dark px-10 dark:bg-background-light text-text-light dark:text-text-light">
     <header
-    class="sticky top-4 z-50 flex items-center justify-between whitespace-nowrap rounded-xl bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border border-solid border-neutral-200 dark:border-white/10 px-6 py-3 shadow-md w-full max-w-7xl sm:px-8 mx-auto"
+    class="sticky top-4 z-50 flex items-center justify-between whitespace-nowrap rounded-xl bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border border-solid border-neutral-200 dark:border-white/10 px-6 py-2 shadow-md w-full max-w-7xl sm:px-8 mx-auto"
   >
     <div class="flex items-center gap-8">
       <div
@@ -107,6 +107,14 @@
       >
         <span class="truncate">Order Now</span>
       </a>
+      <button id="darkModeToggle" class="">
+        <span class="material-symbols-outlined light-mode-icon">
+          wb_sunny
+        </span>
+        <span class="material-symbols-outlined dark-mode-icon">
+          bedtime
+        </span>
+      </button>
     </div>
   </header>
 
@@ -314,5 +322,6 @@
           </div>
     </footer>
     <script src="script.js"></script>
+    <script src="js/dark-mode.js"></script>
 </body>
 </html>
