@@ -60,6 +60,7 @@ function createProductCard(product) {
   return card;
 }
 
+/*
 function addToCart(productId) {
   const product = products.find((p) => p.id === productId);
   if (!product) return;
@@ -94,4 +95,4 @@ function showAddToCartFeedback(productName) {
     toast.style.transition = "opacity 0.3s";
     setTimeout(() => toast.remove(), 300);
   }, 2000);
-}
+}*/

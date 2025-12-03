@@ -10,6 +10,10 @@ if (currentTheme === "dark") {
   html.classList.add("dark");
   darkIcon.classList.add("hidden");
   lightIcon.classList.remove("hidden");
+} else {
+  html.classList.add("light");
+  darkIcon.classList.remove("hidden");
+  lightIcon.classList.add("hidden");
 }
 
 // Toggle dark mode on button click
