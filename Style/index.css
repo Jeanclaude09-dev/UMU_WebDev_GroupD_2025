@@ -1,0 +1,70 @@
+@media (max-width: 768px) {
+    .cards {
+        justify-content: center;
+    }
+    .card {
+        width: 100%; /* Cards will take up full width on small screens */
+    }
+}
+.cards::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Make navbar sticky on top */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* Change brand style */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd; /* Bootstrap primary color */
+}
+
+/* Active state styling */
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+}
+
+/* Dropdown hover background */
+.dropdown-item:hover {
+    background-color: #f2f2f2;
+}
+
+/* Search input focus style */
+.form-control:focus {
+    box-shadow: none;
+    border-color: #198754; /* Bootstrap success color */
+}
+
+/* Navbar shadow */
+.navbar.bg-body-tertiary {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+body {
+  background-color: #f8f9fa;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
