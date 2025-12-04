@@ -85,7 +85,7 @@ main {
   height: 100px;
   bottom: 5%;
   right: -50px;
-  background-color: #e967a5; /* Pink/Red color for the bottom shape */
+  background-color: #e967a5; 
 }
 
 .circle-bottom {
@@ -93,10 +93,10 @@ main {
   height: 60px;
   bottom: 25%;
   left: -30px;
-  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.15); 
 }
 
-/* Social Links */
+
 .social-links {
   margin-top: 50px;
   display: flex;
@@ -114,7 +114,7 @@ main {
   opacity: 1;
 }
 
-/* --- Contact Form (White Side) --- */
+
 .contact-form {
   padding: 50px 60px;
   width: 65%;
@@ -139,12 +139,12 @@ main {
   font-size: 0.9em;
 }
 
-/* Inputs and Textarea */
+
 .form-group input:not([type="checkbox"]),
 .form-group textarea {
   padding: 10px 0;
   border: none;
-  border-bottom: 1px solid #ced4da; /* Light gray line */
+  border-bottom: 1px solid #ced4da; 
   outline: none;
   font-size: 1em;
   color: #1a1a1a;
@@ -152,7 +152,7 @@ main {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-bottom-color: #5d34a5; /* Highlight on focus */
+  border-bottom-color: #5d34a5; 
 }
 
 .form-group textarea {
@@ -161,7 +161,7 @@ main {
   padding-top: 10px;
 }
 
-/* Checkbox Group */
+
 .checkbox-group label:first-child {
   margin-bottom: 15px;
 }
@@ -172,7 +172,7 @@ main {
 }
 
 .checkbox-options input[type="checkbox"] {
-  /* Hide the default checkbox */
+  
   display: none;
 }
 
@@ -199,13 +199,13 @@ main {
 .checkbox-options input[type="checkbox"]:checked + label::before {
   background-color: #5d34a5;
   border-color: #5d34a5;
-  /* This creates the inner white dot look */
+  
   box-shadow: inset 0 0 0 4px white;
 }
 
-/* Submit Button */
+
 .send-button {
-  background-color: #5d34a5; /* Deep Purple */
+  background-color: #5d34a5; 
   color: white;
   padding: 12px 25px;
   border: none;
@@ -213,7 +213,7 @@ main {
   cursor: pointer;
   font-size: 1em;
   font-weight: 600;
-  float: right; /* Position to the bottom right */
+  float: right; 
   margin-top: 30px;
   transition: background-color 0.2s;
 }
@@ -222,7 +222,7 @@ main {
   background-color: #4c2989;
 }
 
-/* --- Media Query for Responsiveness --- */
+
 @media (max-width: 992px) {
   .contact-card {
     flex-direction: column;
@@ -235,7 +235,7 @@ main {
   }
 
   .contact-info-sidebar {
-    /* Reorder decorative shapes */
+
     flex-direction: column;
     justify-content: flex-start;
   }
