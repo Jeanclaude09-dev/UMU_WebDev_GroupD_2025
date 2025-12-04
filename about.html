@@ -12,32 +12,6 @@
 </head>
 <a href="./index.css" ></a>
 <a href="./index.js"></a>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#E2725B",
-              secondary: "#87986A",
-              "background-light": "#FFFFFF",
-              "background-dark": "#1A1A1A",
-              "text-light": "#333333",
-              "text-dark": "#F8F6F2",
-            },
-            fontFamily: {
-              display: ["Be Vietnam Pro", "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-          },
-        },
-      };
-    </script>
 
 <body>
     <script>
@@ -71,7 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
 </style>
 
     <!--start-->
-     <div class="flex items-center gap-8">
+<header
+      class="sticky top-4 z-50 flex items-center justify-between whitespace-nowrap rounded-xl bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border border-solid border-neutral-200 dark:border-white/10 px-6 py-3 shadow-md w-full max-w-7xl sm:px-8 md:p-3 mx-auto"
+    >
+      <div class="flex items-center gap-8">
         <div
           class="flex items-center gap-3 text-text-light dark:text-text-dark"
         >
@@ -94,9 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
             >Menu</a
           >
           <a
-            class="text-primary text-sm font-bold leading-normal border-b-2 border-primary pb-1"
-            href="blog.html"
-            >blog</a
+            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+            href="about.html"
+            >Blog</a
           >
           <a
             class="text-sm font-medium leading-normal hover:text-primary transition-colors"
@@ -104,12 +81,41 @@ document.addEventListener("DOMContentLoaded", function () {
             >About</a
           >
           <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-            href="contact.html"
+            class="text-primary text-sm font-bold leading-normal border-b-2 border-primary pb-1"
+            href="blog.html"
             >Contact</a
           >
         </nav>
       </div>
+      <div class="flex flex-1 justify-end items-center gap-4">
+        <a href="cart.html" class="relative">
+          <span
+            class="material-symbols-outlined text-2xl hover:text-primary transition-colors"
+            >shopping_cart</span
+          >
+          <span
+            id="cart-count"
+            class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+            >0</span
+          >
+        </a>
+        <a
+          href="products.html"
+          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity"
+        >
+          <span class="truncate">Order Now</span>
+        </a>
+        <button id="darkModeToggle" class="">
+          <span class="material-symbols-outlined light-mode-icon">
+            wb_sunny
+          </span>
+          <span class="material-symbols-outlined dark-mode-icon">
+            bedtime
+          </span>
+        </button>
+      </div>
+    </header>
+    <!--end-->
     <!--start-->
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -157,7 +163,6 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
     </div>
-    <!--end-->
     <!--end-->
     <!--start-->
 <div class="cards d-flex gap-3 flex-wrap">
