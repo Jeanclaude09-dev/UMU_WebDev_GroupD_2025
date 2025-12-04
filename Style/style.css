@@ -30,7 +30,7 @@ a {
 
 .main-content {
     max-width: 1280px;
-    margin-right: auto;
+    margin-right: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -378,4 +378,5 @@ body.light-mode .blog-article-item {
 body.light-mode .blog-excerpt {
      color: rgba(248, 246, 242, 0.7);
 }
+
 
