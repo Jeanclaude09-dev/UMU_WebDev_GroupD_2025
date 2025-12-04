@@ -28,7 +28,7 @@ a {
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 .main-content {
-    max-width: 100px;
+    max-width: 1000px;
     margin-right: auto;
     margin-left: auto
     padding-left: 1rem;
@@ -376,6 +376,7 @@ body.light-mode .blog-article-item {
 body.light-mode .blog-excerpt {
      color: rgba(248, 246, 242, 0.7);
 }
+
 
 
 
