@@ -16,10 +16,34 @@
 
 ### Group Roles
 
-- Ndhobe ronald [Landing page]()
-- Jean-Claude Nkongolo [Menu]()
-- Acibu Stephen [Blog]()
-- Rwotomiya Francis [About]()
-- Nahwera Braverly [Contact]()
+- Ndhobe ronald [Landing page](https://jeanclaude09-dev.github.io/UMU_WebDev_GroupD_2025/)
+- Jean-Claude Nkongolo [Menu](https://jeanclaude09-dev.github.io/UMU_WebDev_GroupD_2025/products.html)
+- Acibu Stephen [Blog](https://jeanclaude09-dev.github.io/UMU_WebDev_GroupD_2025/blog.html)
+- Rwotomiya Francis [About](https://jeanclaude09-dev.github.io/UMU_WebDev_GroupD_2025/about.html)
+- Nahwera Braverly [Contact](https://jeanclaude09-dev.github.io/UMU_WebDev_GroupD_2025/contact.html)
 
 ### screenshot
+
+# Landing page
+
+![](screenshot/landing%201%20.png)
+![](screenshot/landing%202.png)
+![](screenshot/landing%203.png)
+
+# Menu
+
+![](screenshot/menu.png)
+
+# Blog
+
+![](screenshot/blog%201.png)
+![](screenshot/blog%202.png)
+
+# About
+
+![](screenshot/about%201.png)
+![](screenshot/about%202.png)
+
+# Contact
+
+![](screenshot/contact.png)
