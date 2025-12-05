@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Home - Nourish</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -12,175 +13,229 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/style.css" />
     <script src="js/script.js"></script>
-</head>
-<body class="bg-background-dark text-text-light">
+  </head>
+  <body class="bg-background-dark text-text-light">
     <header class="main-header">
-        <div class="header-content">
-            <div class="logo-container">
-                <span class="material-symbols-outlined logo-icon">eco</span>
-                <h2 class="logo-text">Nourish</h2>
-            </div>
-            <nav class="main-nav">
-                <a class="nav-link active" href="index.html">Home</a>
-                <a class="nav-link" href="products.html">Menu</a>
-                <a class="nav-link" href="blog.html">Blog</a>
-                <a class="nav-link" href="about.html">About</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
+      <div class="header-content">
+        <div class="logo-container">
+          <span class="material-symbols-outlined logo-icon">eco</span>
+          <h2 class="logo-text">Nourish</h2>
         </div>
-        <div class="header-actions">
-            <a href="cart.html" class="cart-link">
-                <span class="material-symbols-outlined cart-icon">shopping_cart</span>
-                <span id="cart-count" class="cart-count">0</span>
-            </a>
-            <a href="products.html" class="order-button">
-                <span>Order Now</span>
-            </a>
-            <button id="darkModeToggle" class="dark-mode-toggle">
-                <span class="material-symbols-outlined light-mode-icon">wb_sunny</span>
-                <span class="material-symbols-outlined dark-mode-icon">bedtime</span>
-            </button>
-        </div>
+        <nav class="main-nav">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="products.html">Menu</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link">
+          <span class="material-symbols-outlined cart-icon">shopping_cart</span>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+        <a href="products.html" class="order-button">
+          <span>Order Now</span>
+        </a>
+        <button id="darkModeToggle" class="dark-mode-toggle">
+          <span class="material-symbols-outlined light-mode-icon"
+            >wb_sunny</span
+          >
+          <span class="material-symbols-outlined dark-mode-icon">bedtime</span>
+        </button>
+      </div>
     </header>
 
     <main class="main-content">
-        <section class="hero-section" style="background-image: url('https://media.istockphoto.com/id/545286388/photo/chinese-food-blank-background.jpg?s=612x612&w=0&k=20&c=pqOIy07YKO5PlU5VxjscwTGRrrZ8PluKMUjSOz-II60=');">
-            <div class="hero-overlay"></div>
-            <div class="hero-text-container">
-                <p class="hero-subtitle">Food is our common ground, a universal experience</p>
-                <h1 class="hero-title">AT @NOURISH EVERY MEAL TELLS A STORY.</h1>
-                <a href="products.html" class="hero-button">See Our Menu</a>
-            </div>
-        </section>
-
-        <section class="story-section">
-            <h2 class="section-title">Our Humble Story</h2>
-            <div class="story-container">
-                <div class="story-text-container">
-                    <p class="story-text">
-                        Nourish was born from a simple belief: that eating healthy shouldn't feel like a chore. Tired of bland, mass-produced health food, our founder, Chef Elara, decided to bring the vibrant flavors of farm-to-table cooking to the urban doorstep.
-                    </p>
-                    <p class="story-text-alt">
-                        Every meal is crafted with local, sustainable ingredients, focusing on maximum nutritional value without sacrificing that 'wow' factor. We believe in transparency, community, and the power of a really good meal to turn your whole day around.
-                    </p>
-                </div>
-                <div class="story-image-placeholder">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjjqpw5HFsHwvVtS3NqHwLW49nvOhwsSoRQ&s" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="blog-section">
-            <h2 class="section-title">Fresh From the Blog</h2>
-            <div class="blog-grid-container">
-                <article class="blog-article-item">
-                    <div class="blog-image-wrapper">
-                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/210211141204-05-classic-italian-dishes.jpg?q=w_5313,h_2988,x_0,y_0,c_fill" alt="Italian food dish">
-                    </div>
-                    <div class="blog-content-area">
-                        <h3 class="blog-title"><a href="blog.html">An italian food basically for a breakfast Dont miss out</a></h3>
-                        <p class="blog-excerpt">5 Minute Breakfasts That Actually Works.</p>
-                    </div>
-                </article>
-                <article class="blog-article-item">
-                    <div class="blog-image-wrapper">
-                         <img src="https://pbs.twimg.com/media/GIh8QfaWwAAaV23.jpg" alt="Healthy vegetables">
-                    </div>
-                    <div class="blog-content-area">
-                        <h3 class="blog-title"><a href="blog.html">A mixture of two kinds of foods known locally as katogo</a></h3>
-                        <p class="blog-excerpt">DON'T MISS SUCH A YUMMY MEAL.</p>
-                    </div>
-                </article>
-                <article class="blog-article-item">
-                    <div class="blog-image-wrapper">
-                         <img src="https://images.stockcake.com/public/a/5/c/a5c13f96-9752-4564-a75b-c29a8ee2cf1c_large/steaming-coffee-mug-stockcake.jpg" alt="Healthy vegetables">
-                    </div>
-                    <div class="blog-content-area">
-                        <h3 class="blog-title"><a href="blog.html">A cup of brewed coffee made, with a variety of different flavours</a></h3>
-                        <p class="blog-excerpt">Just come for a single or double shot.</p>
-                    </div>
-                </article>
-                <article class="blog-article-item">
-                    <div class="blog-image-wrapper">
-                         <img src="https://pbs.twimg.com/media/F5W8eZ_W4AEzpcW.jpg" alt="Healthy vegetables">
-                    </div>
-                    <div class="blog-content-area">
-                        <h3 class="blog-title"><a href="blog.html">A attractive collection of different food stuffs known as OLUSANIYA</a></h3>
-                        <p class="blog-excerpt">Delicious plant-based meals to kick off the new year.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <footer
-      class="mt-16 border-t border-neutral-200 dark:border-white/10 pt-8 pb-8"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
-        <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-3">
-            <span class="material-symbols-outlined text-secondary text-2xl"
-              >eco</span
-            >
-            <h2 class="text-xl font-bold">Nourish</h2>
-          </div>
-          <p class="text-text-light/70 dark:text-text-dark/70">
-            Fresh, healthy, and delicious meals delivered right to your
-            doorstep.
-          </p>
-        </div>
-        <div class="flex flex-col gap-3">
-          <h4
-            class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
-          >
-            Company
-          </h4>
-          <a class="hover:text-primary transition-colors" href="about.html"
-            >About Us</a
-          >
-          <a class="hover:text-primary transition-colors" href="#">Careers</a>
-          <a class="hover:text-primary transition-colors" href="#">Press</a>
-        </div>
-        <div class="flex flex-col gap-3">
-          <h4
-            class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
-          >
-            Support
-          </h4>
-          <a class="hover:text-primary transition-colors" href="contact.html"
-            >Contact Us</a
-          >
-          <a class="hover:text-primary transition-colors" href="#">FAQ</a>
-          <a class="hover:text-primary transition-colors" href="#"
-            >Privacy Policy</a
-          >
-          <a class="hover:text-primary transition-colors" href="#"
-            >Terms of Service</a
-          >
-        </div>
-        <div class="flex flex-col gap-3">
-          <h4
-            class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
-          >
-            Follow Us
-          </h4>
-          <div class="flex gap-4">
-            <a class="hover:text-primary transition-colors" href="#"
-              >Instagram</a
-            >
-            <a class="hover:text-primary transition-colors" href="#"
-              >Facebook</a
-            >
-            <a class="hover:text-primary transition-colors" href="#">Twitter</a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="text-center text-xs text-text-light/50 dark:text-text-dark/50 mt-12 pt-6 border-t border-neutral-200 dark:border-white/10"
+      <section
+        class="hero-section"
+        style="
+          background-image: url('https://media.istockphoto.com/id/545286388/photo/chinese-food-blank-background.jpg?s=612x612&w=0&k=20&c=pqOIy07YKO5PlU5VxjscwTGRrrZ8PluKMUjSOz-II60=');
+        "
       >
-        © 2025 Nourish. All Rights Reserved.
-      </div>
-    </footer>
-        <center>DESIGNED BY NDHOBE RONALD -2025-B071-22859</center>
+        <div class="hero-overlay"></div>
+        <div class="hero-text-container">
+          <p class="hero-subtitle">
+            Food is our common ground, a universal experience
+          </p>
+          <h1 class="hero-title">AT @NOURISH EVERY MEAL TELLS A STORY.</h1>
+          <a href="products.html" class="hero-button">See Our Menu</a>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <h2 class="section-title">Our Humble Story</h2>
+        <div class="story-container">
+          <div class="story-text-container">
+            <p class="story-text">
+              Nourish was born from a simple belief: that eating healthy
+              shouldn't feel like a chore. Tired of bland, mass-produced health
+              food, our founder, Chef Elara, decided to bring the vibrant
+              flavors of farm-to-table cooking to the urban doorstep.
+            </p>
+            <p class="story-text-alt">
+              Every meal is crafted with local, sustainable ingredients,
+              focusing on maximum nutritional value without sacrificing that
+              'wow' factor. We believe in transparency, community, and the power
+              of a really good meal to turn your whole day around.
+            </p>
+          </div>
+          <div class="story-image-placeholder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjjqpw5HFsHwvVtS3NqHwLW49nvOhwsSoRQ&s"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="blog-section">
+        <h2 class="section-title">Fresh From the Blog</h2>
+        <div class="blog-grid-container">
+          <article class="blog-article-item">
+            <div class="blog-image-wrapper">
+              <img
+                src="https://media.cnn.com/api/v1/images/stellar/prod/210211141204-05-classic-italian-dishes.jpg?q=w_5313,h_2988,x_0,y_0,c_fill"
+                alt="Italian food dish"
+              />
+            </div>
+            <div class="blog-content-area">
+              <h3 class="blog-title">
+                <a href="blog.html"
+                  >An italian food basically for a breakfast Dont miss out</a
+                >
+              </h3>
+              <p class="blog-excerpt">
+                5 Minute Breakfasts That Actually Works.
+              </p>
+            </div>
+          </article>
+          <article class="blog-article-item">
+            <div class="blog-image-wrapper">
+              <img
+                src="https://pbs.twimg.com/media/GIh8QfaWwAAaV23.jpg"
+                alt="Healthy vegetables"
+              />
+            </div>
+            <div class="blog-content-area">
+              <h3 class="blog-title">
+                <a href="blog.html"
+                  >A mixture of two kinds of foods known locally as katogo</a
+                >
+              </h3>
+              <p class="blog-excerpt">DON'T MISS SUCH A YUMMY MEAL.</p>
+            </div>
+          </article>
+          <article class="blog-article-item">
+            <div class="blog-image-wrapper">
+              <img
+                src="https://images.stockcake.com/public/a/5/c/a5c13f96-9752-4564-a75b-c29a8ee2cf1c_large/steaming-coffee-mug-stockcake.jpg"
+                alt="Healthy vegetables"
+              />
+            </div>
+            <div class="blog-content-area">
+              <h3 class="blog-title">
+                <a href="blog.html"
+                  >A cup of brewed coffee made, with a variety of different
+                  flavours</a
+                >
+              </h3>
+              <p class="blog-excerpt">Just come for a single or double shot.</p>
+            </div>
+          </article>
+          <article class="blog-article-item">
+            <div class="blog-image-wrapper">
+              <img
+                src="https://pbs.twimg.com/media/F5W8eZ_W4AEzpcW.jpg"
+                alt="Healthy vegetables"
+              />
+            </div>
+            <div class="blog-content-area">
+              <h3 class="blog-title">
+                <a href="blog.html"
+                  >A attractive collection of different food stuffs known as
+                  OLUSANIYA</a
+                >
+              </h3>
+              <p class="blog-excerpt">
+                Delicious plant-based meals to kick off the new year.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <footer
+        class="mt-16 border-t border-neutral-200 dark:border-white/10 pt-8 pb-8"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-secondary text-2xl"
+                >eco</span
+              >
+              <h2 class="text-xl font-bold">Nourish</h2>
+            </div>
+            <p class="text-text-light/70 dark:text-text-dark/70">
+              Fresh, healthy, and delicious meals delivered right to your
+              doorstep.
+            </p>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h4
+              class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
+            >
+              Company
+            </h4>
+            <a class="hover:text-primary transition-colors" href="about.html"
+              >About Us</a
+            >
+            <a class="hover:text-primary transition-colors" href="#">Careers</a>
+            <a class="hover:text-primary transition-colors" href="#">Press</a>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h4
+              class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
+            >
+              Support
+            </h4>
+            <a class="hover:text-primary transition-colors" href="contact.html"
+              >Contact Us</a
+            >
+            <a class="hover:text-primary transition-colors" href="#">FAQ</a>
+            <a class="hover:text-primary transition-colors" href="#"
+              >Privacy Policy</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Terms of Service</a
+            >
+          </div>
+          <div class="flex flex-col gap-3">
+            <h4
+              class="font-bold uppercase tracking-wider text-text-light/50 dark:text-text-dark/50"
+            >
+              Follow Us
+            </h4>
+            <div class="flex gap-4">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Instagram</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Facebook</a
+              >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center text-xs text-text-light/50 dark:text-text-dark/50 mt-12 pt-6 border-t border-neutral-200 dark:border-white/10"
+        >
+          © 2025 Nourish. All Rights Reserved.
+        </div>
+      </footer>
+      <center>DESIGNED BY NDHOBE RONALD -2025-B071-22859</center>
     </main>
-</body>
+  </body>
 </html>
