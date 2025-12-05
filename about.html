@@ -1,52 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<a href="./index.css" ></a>
-<a href="./index.js"></a>
-
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Menu - Nourish</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" src="global.css" />
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll(".nav-link");
-  const current = window.location.href;
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#E2725B",
+              secondary: "#87986A",
+              "background-light": "#FFFFFF",
+              "background-dark": "#1A1A1A",
+              "text-light": "#333333",
+              "text-dark": "#F8F6F2",
+            },
+            fontFamily: {
+              display: ["Be Vietnam Pro", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
 
-  links.forEach(function (link) {
-    if (link.href === current) {
-      link.classList.add("active");
-    }
-  });
-});
-</script>
-<style>
-    .card {
-  transition: .3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0,0,0,.15);
-}
-.cards {
-    display: flex;
-    flex-wrap: wrap;      /* allows wrapping on small screens */
-    justify-content: space-around;
-    gap: 20px;            /* optional – space between items */
-    padding: 20px;        /* optional – space around container */
-}
+  <!--
+    -->
+  <body class="dark:bg-background-dark">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".nav-link");
+        const current = window.location.href;
 
-</style>
+        links.forEach(function (link) {
+          if (link.href === current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+    <style>
+      .card {
+        transition: 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap; /* allows wrapping on small screens */
+        justify-content: space-around;
+        gap: 20px; /* optional – space between items */
+        padding: 20px; /* optional – space around container */
+      }
+    </style>
 
     <!--start-->
-<header
-      class="sticky top-4 z-50 flex items-center justify-between whitespace-nowrap rounded-xl bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border border-solid border-neutral-200 dark:border-white/10 px-6 py-3 shadow-md w-full max-w-7xl sm:px-8 md:p-3 mx-auto"
+    <header
+      class="sticky top-4 z-50 flex items-center justify-between whitespace-nowrap rounded-xl bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border border-solid border-neutral-200 dark:border-white/10 px-6 py-3 shadow-md w-full max-w-7xl sm:px-8 mx-auto"
     >
       <div class="flex items-center gap-8">
         <div
@@ -61,130 +108,214 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <nav class="hidden md:flex items-center gap-6">
           <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+            class="text-sm font-medium leading-normal hover:text-[#E2725B] transition-colors"
             href="index.html"
             >Home</a
           >
           <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+            class="text-sm font-medium leading-normal hover:text-[#E2725B] transition-colors"
             href="products.html"
             >Menu</a
           >
           <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
-            href="about.html"
+            class="text-sm font-medium leading-normal hover:text-[#E2725B] transition-colors"
+            href="blog.html"
             >Blog</a
           >
           <a
-            class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+            class="text-[#E2725B] text-sm font-bold leading-normal border-b-2 border-[#E2725B] pb-1"
             href="about.html"
             >About</a
           >
           <a
-            class="text-primary text-sm font-bold leading-normal border-b-2 border-primary pb-1"
-            href="blog.html"
+            class="text-sm font-medium leading-normal hover:text-[#E2725B] transition-colors"
+            href="contact.html"
             >Contact</a
           >
         </nav>
+      </div>
+      <div class="flex flex-1 justify-end items-center gap-4">
+        <a href="cart.html" class="relative">
+          <span
+            class="material-symbols-outlined text-2xl hover:text-[#E2725B] transition-colors"
+            >shopping_cart</span
+          >
+          <span
+            id="cart-count"
+            class="absolute -top-2 -right-2 bg-[#E2725B] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+            >0</span
+          >
+        </a>
+        <a
+          href="products.html"
+          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#E2725B] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity"
+        >
+          <span class="truncate">Order Now</span>
+        </a>
+        <button id="darkModeToggle" class="">
+          <span class="material-symbols-outlined light-mode-icon">
+            wb_sunny
+          </span>
+          <span class="material-symbols-outlined dark-mode-icon">
+            bedtime
+          </span>
+        </button>
       </div>
     </header>
     <!--end-->
     <!--start-->
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card h-100">
-                <img src="./Assets/about/rom4.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">OUR STRACTURE</h5>
-                    <P>Rooms: Available in different sizes like single, double, or triple rooms, and more spacious suites.</P>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                    <P>Reservation: A booking to reserve a room for a specific time.</P>
-                    <small class="text-body-secondary">“Courteous treatment will make a customer a walking advertisement.”</small>
-                </div>
-            </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Assets/about/rom4.avif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">OUR STRACTURE</h5>
+            <p>
+              Rooms: Available in different sizes like single, double, or triple
+              rooms, and more spacious suites.
+            </p>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>Reservation: A booking to reserve a room for a specific time.</p>
+            <small class="text-body-secondary"
+              >“Courteous treatment will make a customer a walking
+              advertisement.”</small
+            >
+          </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="./Assets/about/rom2.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">RECRATIONS CENTER</h5>
-                    <P>Amenities: Often include restaurants, pools, gyms, and business centers. Some offer services like room service, laundry, and wake-up calls.</P>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">Booking engine: A system used to manage reservations.<br>Housekeeping: The staff responsible for cleaning rooms and changing linens.</small>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Assets/about/rom2.avif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">RECRATIONS CENTER</h5>
+            <p>
+              Amenities: Often include restaurants, pools, gyms, and business
+              centers. Some offer services like room service, laundry, and
+              wake-up calls.
+            </p>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary"
+              >Booking engine: A system used to manage reservations.<br />Housekeeping:
+              The staff responsible for cleaning rooms and changing
+              linens.</small
+            >
+          </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="./Assets/about/rom3.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">DRINKS AVAILABLE</h5>
-                    <P>Hospitality: The overall service provided by the hotel staff, which aims to make guests feel comfortable and welcome. </P>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">Suite: A larger-than-average hotel room, sometimes with multiple rooms and a separate living area.</small>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Assets/about/rom3.avif" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">DRINKS AVAILABLE</h5>
+            <p>
+              Hospitality: The overall service provided by the hotel staff,
+              which aims to make guests feel comfortable and welcome.
+            </p>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary"
+              >Suite: A larger-than-average hotel room, sometimes with multiple
+              rooms and a separate living area.</small
+            >
+          </div>
         </div>
+      </div>
     </div>
     <!--end-->
     <!--start-->
-<div class="cards d-flex gap-3 flex-wrap">
-    <div class="card" style="width: 18rem;">
-        <img src="./Assets/about/m1.jpg" class="card-img-top" alt="">
+    <div class="cards d-flex gap-3 flex-wrap">
+      <div class="card" style="width: 18rem">
+        <img src="./Assets/about/m1.jpg" class="card-img-top" alt="" />
         <div class="card-body">
-            <h5 class="card-title">METHODS OF PAYMENT</h5>
-            <p>A payment method is the specific way a consumer transfers funds to a business or individual to pay for goods and services. They act as the critical bridge in any transaction, facilitating the exchange of value between buyers and sellers. In today’s economy, payment methods encompass everything from physical cash and traditional cheques to sophisticated digital systems like mobile wallets, bank transfers, and cryptocurrencies.</p>
-            <p class="card-text">Everyone needs reminding why they love what they do from time to time, and what the keys are to succeeding in that pursuit. Here are some quotes to fuel the fire and inspire you</p>
+          <h5 class="card-title">METHODS OF PAYMENT</h5>
+          <p>
+            A payment method is the specific way a consumer transfers funds to a
+            business or individual to pay for goods and services. They act as
+            the critical bridge in any transaction, facilitating the exchange of
+            value between buyers and sellers. In today’s economy, payment
+            methods encompass everything from physical cash and traditional
+            cheques to sophisticated digital systems like mobile wallets, bank
+            transfers, and cryptocurrencies.
+          </p>
+          <p class="card-text">
+            Everyone needs reminding why they love what they do from time to
+            time, and what the keys are to succeeding in that pursuit. Here are
+            some quotes to fuel the fire and inspire you
+          </p>
         </div>
-    </div>
+      </div>
 
-    <div class="card" style="width: 18rem;">
-        <img src="./Assets/about/f2.avif" class="card-img-top" alt="">
+      <div class="card" style="width: 18rem">
+        <img src="./Assets/about/f2.avif" class="card-img-top" alt="" />
         <div class="card-body">
-            <h5 class="card-title">FOOD AVIALABLE</h5>
-            <p class="card-text">Thoughts on this hospitality industry quote:
-This couldn’t be more true of a hotel, where many departments need to work together to create an overall sense of hospitality. When it all comes together, it’s a rewarding experience for both guest and hotel so it should be a goal that inspires your business to strive for improvement</p>
+          <h5 class="card-title">FOOD AVIALABLE</h5>
+          <p class="card-text">
+            Thoughts on this hospitality industry quote: This couldn’t be more
+            true of a hotel, where many departments need to work together to
+            create an overall sense of hospitality. When it all comes together,
+            it’s a rewarding experience for both guest and hotel so it should be
+            a goal that inspires your business to strive for improvement
+          </p>
         </div>
-    </div>
+      </div>
 
-    <div class="card" style="width: 18rem;">
-        <img src="./Assets/about/f2.avif" class="card-img-top" alt="">
+      <div class="card" style="width: 18rem">
+        <img src="./Assets/about/f2.avif" class="card-img-top" alt="" />
         <div class="card-body">
-            <h5 class="card-title">FOOD AVIALABLE</h5>
-            <p class="card-text">Comments on this hotel hospitality quote:
-This is one of the easiest ways to keep a guest on your side. Even if you know immediately something can’t be done, letting the guest know that you will investigate it for them makes them appreciate the effort and won’t be turned off by an instant rejection of their request</p>
+          <h5 class="card-title">FOOD AVIALABLE</h5>
+          <p class="card-text">
+            Comments on this hotel hospitality quote: This is one of the easiest
+            ways to keep a guest on your side. Even if you know immediately
+            something can’t be done, letting the guest know that you will
+            investigate it for them makes them appreciate the effort and won’t
+            be turned off by an instant rejection of their request
+          </p>
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="./Assets/about/f1.avif" class="card-img-top" alt="">
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./Assets/about/f1.avif" class="card-img-top" alt="" />
         <div class="card-body">
-            <h5 class="card-title">FOOD AVIALABLE</h5>
-            <p class="card-text">Comments on this hotel hospitality quote:
-This is one of the easiest ways to keep a guest on your side. Even if you know immediately something can’t be done, letting the guest know that you will investigate it for them makes them appreciate the effort and won’t be turned off by an instant rejection of their request</p>
+          <h5 class="card-title">FOOD AVIALABLE</h5>
+          <p class="card-text">
+            Comments on this hotel hospitality quote: This is one of the easiest
+            ways to keep a guest on your side. Even if you know immediately
+            something can’t be done, letting the guest know that you will
+            investigate it for them makes them appreciate the effort and won’t
+            be turned off by an instant rejection of their request
+          </p>
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="./Assets/about/f5.avif" class="card-img-top" alt="">
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./Assets/about/f5.avif" class="card-img-top" alt="" />
         <div class="card-body">
-            <h5 class="card-title">FOOD AVIALABLE</h5>
-            <p class="card-text">Comments on this hotel hospitality quote:
-This is one of the easiest ways to keep a guest on your side. Even if you know immediately something can’t be done, letting the guest know that you will investigate it for them makes them appreciate the effort and won’t be turned off by an instant rejection of their request</p>
+          <h5 class="card-title">FOOD AVIALABLE</h5>
+          <p class="card-text">
+            Comments on this hotel hospitality quote: This is one of the easiest
+            ways to keep a guest on your side. Even if you know immediately
+            something can’t be done, letting the guest know that you will
+            investigate it for them makes them appreciate the effort and won’t
+            be turned off by an instant rejection of their request
+          </p>
         </div>
+      </div>
     </div>
-</div>
-
+    <script src="js/dark-mode.js"></script>
     <!--end-->
-
-</body>
-
+  </body>
 </html>
